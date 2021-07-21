@@ -177,7 +177,7 @@ let agregarDato = () =>{
     let valor = forma['valor'];
     // Vemos si los valores no son cadenas vacias
     if(descripcion.value !== "" && valor.valor !== ""){
-        // Analizamos los valores de "tipo" (ingreso o egreso)
+        /*Analizamos los valores de "tipo" (ingreso o egreso)*/
         if(tipo.value == "ingreso"){
             ingresos.push( new Ingreso( descripcion.value, Number(valor.value)));
             cargarCabecero();
